@@ -62,7 +62,7 @@ body {
 	width: 1000px;
 	margin: 0 auto;
 	padding: 0 65px;
-}
+
 
 nav {
 	display: flex;
@@ -84,9 +84,15 @@ nav a {
 	border-radius: 5px;
 }
 
+.top-box img {
+	width: 280px;
+	height: 280px;
+}
+
 h1 {
 	font-size: 340%;
 	margin-top: 15px;
+	text-decoration: underline;
 }
 
 h2 {
@@ -194,6 +200,23 @@ footer {
 	background: grey;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	margin-left: -15px;
 	margin-top: 30px;
+	line-height: 1.2;
+}
+
+@media (max-width: 500px){
+	width: 500px;
+	padding: 0 5px;
+
+nav {
+	justify-content: flex-start;
+}
+
+footer {
+	width: 490px;
+	margin: 0;
+}
+}
 }
