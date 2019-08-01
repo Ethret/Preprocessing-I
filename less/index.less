@@ -63,12 +63,19 @@ body {
 	margin: 0 auto;
 	padding: 0 65px;
 
+.ender {
+	height: 80px;
+}
+
+.bold {
+	font-weight: bold;
+}
 
 nav {
 	display: flex;
 	justify-content: flex-end;
-	height: 80px;
 	align-items: center;
+	.ender();
 }
 
 nav a {
@@ -100,8 +107,10 @@ h2 {
 	margin-top: 15px;
 }
 
+@vlightgrey: #d3d3d3;
+
 .border {
-	border-top: 1px solid #d3d3d3;
+	border-top: 1px solid @vlightgrey;
 	margin: 25px 0;
 }
 
@@ -122,13 +131,13 @@ p {
 }
 
 h3 {
-	font-weight: bold;
+	.bold();
 	font-size: 220%;
 	margin-bottom: 15px;
 }
 
 h4 {
-	font-weight: bold;
+	.bold();
 	font-size: 150%;
 	margin-bottom: 10px;
 }
@@ -145,12 +154,12 @@ h4 {
 }
 
 .mid-content ul {
-	border: 1px solid #d3d3d3;
+	border: 1px solid @vlightgrey;
 	border-radius: 5px;
 }
 
 .mid-content ul li {
-	border-bottom: 1px solid #d3d3d3;
+	border-bottom: 1px solid @vlightgrey;
 	padding: 15px 20px;
 }
 
@@ -167,16 +176,16 @@ h4 {
 }
 
 .bot-content .work-hist-item:first-of-type {
-	font-weight: bold;
+	.bold();
 }
 
 .bot-content .work-hist-item:nth-of-type(even) {
-	background: #d3d3d3
+	background: @vlightgrey
 }
 
 .bot-content .work-hist-item div:first-child {
 	flex-basis: 13%;
-	font-weight: bold;
+	.bold();
 }
 
 .bot-content .work-hist-item div:nth-child(2) {
@@ -193,10 +202,9 @@ h4 {
 
 footer {
 	display: flex;
-	height: 80px;
 	width: 900px;
 	color: white;
-	font-weight: bold;
+	.bold();
 	background: grey;
 	justify-content: center;
 	align-items: center;
@@ -204,6 +212,7 @@ footer {
 	margin-left: -15px;
 	margin-top: 30px;
 	line-height: 1.2;
+	.ender();
 }
 
 @media (max-width: 500px){
